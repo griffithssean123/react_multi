@@ -15,11 +15,12 @@ function About() {
           <div class="col-lg-5">
             <h1 class="font-weight-light">About</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+                Education: <br></br>
+                - Bachelor of Science (Major in Physics) at the
+                University of Melboure <br></br>
+                - Diploma in Computing at the University of Melbourne
             </p>
+
           </div>
         </div>
       </div>

@@ -13,6 +13,7 @@ import {
   Posts,
   Post,
   Pathfinding,
+  Adsense
 } from "./components";
 
 ReactDOM.render(
@@ -27,6 +28,7 @@ ReactDOM.render(
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
       </Route>
+      <Route path="/adsense" element={<Adsense />} />
     </Routes>
     <Footer />
   </Router>,

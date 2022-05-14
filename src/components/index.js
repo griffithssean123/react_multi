@@ -8,3 +8,4 @@ export { default as Posts } from "./blog/Posts";
 export { default as Post } from "./blog/Post";
 
 export { default as Pathfinding } from "./PathfindingVisualiser/Pathfinding";
+export { default as Adsense } from './Adsense'

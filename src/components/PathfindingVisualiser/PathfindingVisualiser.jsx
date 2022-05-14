@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Node from './Node/Node';
 import {dijkstra, getNodesInShortestPathOrder} from './algorithms/dijkstra';
+import Slider from '@mui/material/Slider';
 
 import './PathfindingVisualiser.css';
 
@@ -75,12 +76,29 @@ export default class PathfindingVisualizer extends Component {
 
   render() {
     const {grid, mouseIsPressed} = this.state;
-
+    const HEIGHT_OF_BOARD = 30;
+    const getHeight=(e,val)=>{
+      HEIGHT_OF_BOARD = val
+      console.warn(val)
+    }
     return (
       <>
         <button onClick={() => this.visualizeDijkstra()}>
           Visualize Dijkstra's Algorithm
         </button>
+        <div style={{width:300, margin:30}}>
+          <Slider
+            aria-label="Small steps"
+            step={2}
+            defaultValue={30}
+            min={10}
+            max={100}
+            valueLabelDisplay="auto"
+            onChange={getHeight}
+          />
+        </div>
+        
+        <p>{HEIGHT_OF_BOARD}</p>
         <div className="grid">
           {grid.map((row, rowIdx) => {
             return (
