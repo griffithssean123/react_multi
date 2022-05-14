@@ -5,7 +5,7 @@ import {dijkstra, getNodesInShortestPathOrder} from './algorithms/dijkstra';
 import './PathfindingVisualiser.css';
 
 const START_NODE_ROW = 10;
-const START_NODE_COL = 15;
+const START_NODE_COL = 10;
 const FINISH_NODE_ROW = 10;
 const FINISH_NODE_COL = 35;
 
@@ -116,7 +116,7 @@ const getInitialGrid = () => {
   const grid = [];
   for (let row = 0; row < 20; row++) {
     const currentRow = [];
-    for (let col = 0; col < 40; col++) {
+    for (let col = 0; col < 35; col++) {
       currentRow.push(createNode(col, row));
     }
     grid.push(currentRow);
