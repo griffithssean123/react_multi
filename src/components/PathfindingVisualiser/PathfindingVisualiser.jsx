@@ -7,7 +7,7 @@ import './PathfindingVisualiser.css';
 const START_NODE_ROW = 10;
 const START_NODE_COL = 10;
 const FINISH_NODE_ROW = 10;
-const FINISH_NODE_COL = 35;
+const FINISH_NODE_COL = 25;
 
 export default class PathfindingVisualizer extends Component {
   constructor() {
